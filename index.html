@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>书心InkWell - 书心写作，舒心写作</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- 添加 AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- 添加 AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">书心InkWell</div>
+            <div class="nav-links">
+                <a href="#features">功能</a>
+                <a href="#pricing">价格</a>
+                <a href="#about">关于</a>
+                <button class="cta-button">立即体验</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-container">
+            <h1>书心写作，舒心写作</h1>
+            <p>释放创作灵感，让写作成为一种享受</p>
+            <button class="primary-button">开始创作</button>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="features-container">
+            <h2>强大特性</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <!-- 文件夹图标位置 -->
+                        <svg class="icon-placeholder" viewBox="0 0 24 24">
+                            <rect width="24" height="24" fill="none" stroke="#fff" />
+                            <text x="12" y="12" text-anchor="middle" dy=".3em">📁</text>
+                        </svg>
+                    </div>
+                    <h3>本地管理</h3>
+                    <p>直接打开本地文件夹，免去上传痛苦</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <!-- AI助手图标位置 -->
+                        <svg class="icon-placeholder" viewBox="0 0 24 24">
+                            <rect width="24" height="24" fill="none" stroke="#fff" />
+                            <text x="12" y="12" text-anchor="middle" dy=".3em">🤖</text>
+                        </svg>
+                    </div>
+                    <h3>AI助手</h3>
+                    <p>原生支持ai，右侧直接对话</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <!-- 内联操作图标位置 -->
+                        <svg class="icon-placeholder" viewBox="0 0 24 24">
+                            <rect width="24" height="24" fill="none" stroke="#fff" />
+                            <text x="12" y="12" text-anchor="middle" dy=".3em">💬</text>
+                        </svg>
+                    </div>
+                    <h3>内联操作</h3>
+                    <p>编辑框内调用对话框，AI直接帮你改</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <!-- 多开图标位置 -->
+                        <svg class="icon-placeholder" viewBox="0 0 24 24">
+                            <rect width="24" height="24" fill="none" stroke="#fff" />
+                            <text x="12" y="12" text-anchor="middle" dy=".3em">📑</text>
+                        </svg>
+                    </div>
+                    <h3>页面多开</h3>
+                    <p>左边写作右边放大纲</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="demos" id="demos">
+        <div class="demos-container">
+            <h2>产品演示</h2>
+            <div class="demos-grid">
+                <!-- 第一个演示：左视频右文字 -->
+                <div class="demo-item">
+                    <div class="demo-video">
+                        <video controls muted playsinline>
+                            <source src="大纲移动.mp4" type="video/mp4">
+                            您的浏览器不支持视频标签
+                        </video>
+                    </div>
+                    <div class="demo-content">
+                        <h3>智能大纲生成</h3>
+                        <p>输入文章主题，AI助手快速生成专业的文章大纲结构，让写作更有条理</p>
+                    </div>
+                </div>
+
+                <!-- 第二个演示：左文字右视频 -->
+                <div class="demo-item reverse">
+                    <div class="demo-video">
+                        <video controls>
+                            <source src="内容生成演示.mp4" type="video/mp4">
+                            您的浏览器不支持视频标签
+                        </video>
+                    </div>
+                    <div class="demo-content">
+                        <h3>AI内容生成</h3>
+                        <p>根据大纲智能扩写内容，提供多种写作风格，让创作更加轻松自如</p>
+                    </div>
+                </div>
+
+                <!-- 第三个演示：左视频右文字 -->
+                <div class="demo-item">
+                    <div class="demo-video">
+                        <video controls>
+                            <source src="分页预览.mp4" type="video/mp4">
+                            您的浏览器不支持视频标签
+                        </video>
+                    </div>
+                    <div class="demo-content">
+                        <h3>实时分页预览</h3>
+                        <p>所见即所得的分页预览功能，让你随时掌握文章的最终呈现效果</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us" id="about">
+        <div class="about-container">
+            <h2>关于我们</h2>
+            <!-- 添加图片容器 -->
+
+            <div class="about-content">
+                <!-- 第一区块：起源故事 -->
+                <div class="text-block typewriter" data-story="origin">
+                    <p class="lead-text">书心Inkwell IDE为作者在北大新青年极客松和几位同学共同碰撞得到的想法。</p>
+                </div>
+                
+                <!-- 第二区块：问题与解决方案 -->
+                <div class="text-block" data-story="origin">
+                    <p>起因是我们都是多平台创作者，深受多窗口编辑&格式切换所困扰。</p>
+                    <p>于是我们想要将AI嵌入IDE，免受多窗口编辑之苦。</p>
+                    <p>同时希望能够接入VSCode插件库的IDE，以解决不同格式编辑的需求。</p>
+                </div>
+                
+                <!-- 第三区块：经验背景 -->
+                <div class="text-block" data-story="experience">
+                    <p>我们都是Obsidian，Notion，VSCode，Cursor的深度用户，</p>
+                    <p>前后在不同笔记软件敲下几十万字。</p>
+                </div>
+                
+                <!-- 第四区块：承诺 -->
+                <div class="text-block highlight" data-story="promise">
+                    <p>请相信我们</p>
+                    <p>我们或许不懂太多前端代码</p>
+                    <p>但我们懂文字创作，懂文字创作者</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script>
+        // 初始化 AOS
+        AOS.init({
+            duration: 1000,    // 动画持续时间
+            once: false,       // 动画是否只播放一次
+            offset: 100,       // 触发动画的位置
+        });
+    </script>
+
+
+
+    <section class="cta-section">
+        <div class="cta-container">
+            <div class="version-info">
+                <h3>当前版本</h3>
+                <div class="version-number">v1.0.0 Beta</div>
+                <div class="version-date">2024年3月更新</div>
+                <div class="version-features">
+                    <span class="feature-tag">智能大纲</span>
+                    <span class="feature-tag">AI助手</span>
+                    <span class="feature-tag">多格式导出</span>
+                </div>
+            </div>
+            
+            <div class="download-area">
+                <h3>立即体验</h3>
+                <div class="download-options">
+                    <a href="#" class="download-btn windows">
+                        <i class="fab fa-windows"></i>
+                        Windows 下载
+                    </a>
+                    <a href="#" class="download-btn mac">
+                        <i class="fab fa-apple"></i>
+                        macOS 下载
+                    </a>
+                </div>
+                <p class="download-note">支持 Windows 10+ / macOS 10.15+</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="羽毛.pic.jpg" alt="书心 Logo">
+                    <p>让写作回归本质</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>联系我们</h4>
+                        <a href="mailto:contact@inkwell.com">contact@inkwell.com</a>
+                        <a href="https://github.com/inkwell" target="_blank">GitHub</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>资源</h4>
+                        <a href="#">使用文档</a>
+                        <a href="#">更新日志</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>法律</h4>
+                        <a href="#">隐私政策</a>
+                        <a href="#">用户协议</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 书心 Inkwell IDE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html> 
